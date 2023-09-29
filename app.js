@@ -12,12 +12,30 @@ document.querySelector('.info ul').style.transition='0.4s';
 
 }
 
+document.querySelector('section').addEventListener("click", function (e) {
+
+    if (!document.querySelector('.info ul ').contains(e.target)) {
+        document.querySelector('.info ul').classList.add('passiv')
+    }
+
+
+});
+
 basket.onclick=function(){
 if(open.classList.contains('active')){
     open.classList.remove('active');
 }
 
 }
+
+document.querySelector('section').addEventListener("click", function (e) {
+
+    if (!document.querySelector('.open').contains(e.target)) {
+        document.querySelector('.open').classList.add('active')
+    }
+
+
+});
 
 close.onclick=function(){
     document.querySelector('.open').classList.add('active');
@@ -53,9 +71,6 @@ document.querySelector('section').addEventListener("click", function (e) {
         if (!document.querySelector('.user-drop').contains(e.target)) {
             document.querySelector('.user-drop').classList.add('closed')
         }
-    
-
-
 
     
 });
