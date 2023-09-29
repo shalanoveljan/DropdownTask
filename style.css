@@ -310,7 +310,7 @@ color: #3577f0;
     height: 350px;
     position: absolute;
     top: 40px;
-    left: 150px;
+    right: 5%;
     box-shadow:  3px 5px 13px 1px #ccc6c6 ;
     padding: 20px;
     text-align: left;
@@ -381,5 +381,8 @@ order:1 !important;
                 order:5 !important;
                 }
 
+.user-drop{
+    right: 50%;
+}
 
 }
