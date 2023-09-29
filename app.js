@@ -42,6 +42,25 @@ bagla.onclick=function(){
 
 let sondur=document.querySelector('.icon4');
 sondur.onclick=function(){
+    console.log(3);
     document.querySelector('.user-drop').classList.toggle('closed');
     document.querySelector('.user-drop').style.transition='0.6s';
+}
+
+
+document.querySelector('section').addEventListener("click", function (e) {
+
+        if (!document.querySelector('.user-drop').contains(e.target)) {
+            document.querySelector('.user-drop').classList.add('closed')
+        }
+    
+
+
+
+    
+});
+
+
+document.body.onclick=function(e) {
+   
 }
